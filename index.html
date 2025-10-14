@@ -1,46 +1,73 @@
 <!DOCTYPE html>
-<h2>Projects</h2>
-<div class="project-grid">
-<div class="project-card">
-<img src="https://via.placeholder.com/300x180" alt="Project 1">
-<h3>Dashboard Analytics</h3>
-<p>Interactive dashboard with real-time data visualization and analytics.</p>
-<a href="#" class="btn">View Project</a>
-</div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio - Christian Mikhael</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Christian Mikhael</h1>
+      <ul class="nav-links">
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#skills">Keahlian</a></li>
+        <li><a href="#projects">Proyek</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <section class="hero">
+    <h2>Halo, Saya <span>Christian Mikhael</span></h2>
+    <p>Seorang Web Developer yang berfokus pada desain modern dan interaktif.</p>
+    <button onclick="scrollToSection('projects')">Lihat Proyek</button>
+  </section>
 
-<div class="project-card">
-<img src="https://via.placeholder.com/300x180" alt="Project 2">
-<h3>E-commerce UI</h3>
-<p>Responsive e-commerce frontend built with modern JavaScript techniques.</p>
-<a href="#" class="btn">View Project</a>
-</div>
+  <section id="about" class="section">
+    <h2>Tentang Saya</h2>
+    <p>
+      Saya adalah seorang pengembang web yang berpengalaman dalam membangun website
+      responsif, interaktif, dan profesional menggunakan teknologi modern.
+    </p>
+  </section>
 
+  <section id="skills" class="section">
+    <h2>Keahlian</h2>
+    <div class="skills">
+      <div class="skill-card">HTML</div>
+      <div class="skill-card">CSS</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">React</div>
+      <div class="skill-card">UI/UX Design</div>
+    </div>
+  </section>
 
-<div class="project-card">
-<img src="https://via.placeholder.com/300x180" alt="Project 3">
-<h3>Portfolio CMS</h3>
-<p>Custom CMS for managing blog posts and project showcases with Markdown support.</p>
-<a href="#" class="btn">View Project</a>
-</div>
-</div>
-</section>
+  <section id="projects" class="section">
+    <h2>Proyek</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Website Pribadi</h3>
+        <p>Portofolio online dengan desain responsif.</p>
+      </div>
+      <div class="project-card">
+        <h3>Aplikasi Kebiasaan</h3>
+        <p>Aplikasi untuk melacak pola hidup sehat dan produktif.</p>
+      </div>
+    </div>
+  </section>
 
+  <section id="contact" class="section">
+    <h2>Kontak</h2>
+    <p>Email: <a href="mailto:christian@example.com">christian@example.com</a></p>
+    <p>LinkedIn: <a href="#">linkedin.com/in/christianmikhael</a></p>
+  </section>
 
-<section id="contact" class="contact section">
-<h2>Contact Me,</h2>
-<p>If you’d like to discuss a project or just say hi, feel free to reach out!</p>
-<form id="contactForm">
-<input type="text" id="name" placeholder="Your Name" required>
-<input type="email" id="email" placeholder="Your Email" required>
-<textarea id="message" placeholder="Your Message" rows="5" required></textarea>
-<button type="submit">Send Message</button>
-</form>
-</section>
+  <footer>
+    <p>© 2025 Christian Mikhael. Semua hak dilindungi.</p>
+  </footer>
 
-
-<footer>
-<p>© <span id="year"></span> Christian Mikhael — Built with ❤️ using HTML, CSS, and JS.</p>
-</footer>
+  <script src="script.js"></script>
 </body>
 </html>
